@@ -17,12 +17,17 @@
 
   _Sample snapshot of dataset_
 
-- ### Data Cleaning and Preparation
+- ### Data Cleaning and Preprocessing
   The dataset does not contain missing values. However, prior to analyzing the data, necessary feature transformation and outlier deletion were performed based on domain knowledge. In particular, the following tasks are performed:
 
-  - Created features that represent the difference between a particular column between teams.
-  - Transformed necessary features to qualitative variables
-  - Removed outlier games based on winning with a significant gold deficit at 15 minutes/losing with a significant gold lead at 15 minutes, which constitutes around 3% of the total games.
+  - Created features that represent the difference between a particular feature between teams. Note that all such features are constructed by subtracting the corresponding value of the red team from the blue team. 
+    For instance, the feature $goldDiff$ is created by $blueTeamTotalGold - redTeamTotalGold$.
+  - Transformed necessary features to categorical variables. In particular, features $blueWin$, $blueTeamFirstBlood$ and $redTeamFirstBlood$ are transformed into binary categorical variables due to their binary nature.
+  - Removed outlier games based on winning with a significant gold deficit at 15 minutes/losing with a significant gold lead at 15 minutes. 730 games satisfy this criteria, which constitutes around 3% of the total games. The data points that satisfy the following criteria are filtered out prior to data analysis:
+    
+$$
+\left( \text{goldDiff} \geq 4000 \land \text{blueWin} = 0 \right) \lor \left( \text{goldDiff} \leq -4000 \land \text{blueWin} = 1 \right)
+$$
 
 - ### Exploratory Data Analysis
   EDA in this project is aimed to address the following questions:
