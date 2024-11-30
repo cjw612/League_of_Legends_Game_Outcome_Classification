@@ -51,9 +51,9 @@
   |XGBoost|0.781987|0.790205|0.762731|0.776076|
 
 - ### Limitations
-  - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the results.
-  - In practice, gold difference at the 15-minute mark does not guarantee the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may not affect the outcome of the game. Therefore, incorporating the champion compositions of both teams may further increase prediction accuracy.
-  - Incorporating player metadata (e.g., proficiency of champion, rank) may also increase prediction accuracy, as the current dataset assumes that all players are homogenous. 
+  - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the current classification results.
+  - In practice, the impact of the gold difference at the 15-minute mark is not always deterministic of the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may not affect the outcome of the game. Therefore, incorporating champion compositions of both teams may further increase prediction accuracy.
+  - Incorporating player metadata (e.g., proficiency in champion, skill level) may also increase prediction accuracy, as the current dataset follows the assumption that all players are homogenous. 
 
 - ### References
 - League of Legends SoloQ matches at 15 minutes 2024. (2024). Karlo Rusovan and Daria Komic. Kaggle.
