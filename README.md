@@ -1,7 +1,5 @@
 # League of Legends Winrate Prediction
 
-test
-
 ### Project Overview and Objective
 This project aims to predict which team would win a League of Legends game using in-game data representing the game state at the 15-minute mark. In particular, given the vector of the in-game statistics $X_i$ of game $i$, we aim to construct a classifier $C$ to predict the outcome $Y_i$ of game $i$, where $Y_i$ is a binary class denoting the win or loss of that particular game.
 
