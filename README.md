@@ -54,10 +54,10 @@ $$
 
   |Model|Accuracy|Precision|Recall|F1-Score|
   |-----|--------|---------|------|--------|
-  |Logistic Regression|0.783132|0.783132|0.780701|0.781897|
+  |Logistic Regression|0.784456|0.783151|0.781385|0.782249|
   |LDA|0.784456	|0.785814|0.776755|0.781230|
-  |Random Forest|0.777219|0.783135|0.761377|0.772021|
-  |XGBoost|0.781987|0.790205|0.762731|0.776076|
+  |Random Forest|0.782285|0.786694|0.769270|0.777832|
+  |XGBoost|0.783221|0.789307|0.767706|0.778230|
 
 - ### Limitations
   - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the current classification results.
