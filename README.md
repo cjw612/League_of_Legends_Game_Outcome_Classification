@@ -36,7 +36,7 @@ Four different models are deployed in this analysis to determine which model per
 - Logistic Regression with L1 penalty
 - Linear Discriminant Analysis (LDA)
 - Random Forest
-- XG Boosting with hyperparameter optimization
+- XGBoost with Bayesian hyperparameter optimization
 
 In addition, K-fold Cross-Validation with $K = 5$ is also implemented for model selection to lower the variance of the results.
 
@@ -48,7 +48,7 @@ The results of the four models are summarized as follows:
 |Logistic Regression|0.784158|0.783160|0.780529|0.781826|
 |LDA|0.784073|0.785103|0.776931|0.780966|
 |Random Forest|0.776581|0.782572|0.760548|0.771334|
-|XGB|0.779816|0.787437|0.761364|0.774055|
+|XGBoost|0.779816|0.787437|0.761364|0.774055|
 
 ### Limitations
 - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the results.
