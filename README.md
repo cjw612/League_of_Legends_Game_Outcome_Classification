@@ -52,6 +52,6 @@ The results of the four models are summarized as follows:
 
 ### Limitations
 - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the results.
-- In practice, gold difference at the 15-minute mark does not guarantee the outcome of the game. For example, for team compositions that are late game-focused, a gold deficit at the 15-minute mark may not effect the outcome of the game. Therefore, incorporating the champion compositions of both teams may increase prediction accuracy.
+- In practice, gold difference at the 15-minute mark does not guarantee the outcome of the game. For example, for team compositions that are 個late game-focused, a gold deficit at the 15-minute mark may not affect the outcome of the game. Therefore, incorporating the champion compositions of both teams may further increase prediction accuracy.
 - Incorporating player metadata (e.g., proficiency of champion, rank) may also increase prediction accuracy, as the current dataset assumes that all players are homogenous. 
 
