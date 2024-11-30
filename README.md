@@ -1,5 +1,5 @@
 # League of Legends Game Outcome Prediction
-![Game Map of League of Legends](assets/SRFull-1600p (1).jpg)
+![Game Map of League of Legends](assets/SR.jpg)
 
 
 - ### Project Overview and Objective
