@@ -61,5 +61,7 @@ $$
   - Incorporating player metadata (e.g., proficiency in champion, skill level) may also increase prediction accuracy, as the current dataset follows the assumption that all players are homogenous. 
 
 - ### References
-  League of Legends SoloQ matches at 15 minutes 2024. (2024). Karlo Rusovan and Daria Komic. Kaggle.
-https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data
+
+  [1] Redback93. "SRFull-1600p." Reddit 20, July 2025, https://www.reddit.com/r/leagueoflegends/comments/3dx2dn/extremely_high_resolution_summoners_rift_image/
+  [2] Karlo Rusovan and Daria Komic, League of Legends SoloQ matches at 15 minutes 2024 (Kaggle, 2024), https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data
+
