@@ -62,8 +62,8 @@ $$
   |XGBoost|0.783221|0.789307|0.767706|0.778230|
 
 - ### Limitations
-  - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the current classification results.
-  - In practice, the impact of the gold difference at the 15-minute mark is not always deterministic of the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may not affect the outcome of the game. Therefore, incorporating champion compositions of both teams may further increase prediction accuracy.
+  - As current outlier detection is based on domain knowledge, incorporating a more sophisticated outlier detection algorithm may further improve the current classification results.
+  - In practice, the impact of the gold difference at the 15-minute mark is not always deterministic of the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may have little to even no impact on the outcome of the game. Therefore, incorporating champion composition metadata of both teams may further increase prediction accuracy.
   - Incorporating player metadata (e.g., proficiency in champion, skill level) may also increase prediction accuracy, as the current dataset follows the assumption that all players are homogenous. 
 
 - ### References
