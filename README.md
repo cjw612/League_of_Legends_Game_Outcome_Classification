@@ -1,6 +1,6 @@
 # League of Legends Game Outcome Prediction
 ![Game Map of League of Legends](assets/SR.jpg)
-
+*Summoner's Rift, the primary map of League of Legends*
 
 - ### Project Overview and Objective
   This project aims to predict which team would win a League of Legends game using in-game data representing the game state at the 15-minute mark. League of Legends is an online MOBA game with two sides, a blue side and a red side, with each side consisting of five players. In particular, given the vector of the in-game statistics $X_i$ of game $i$, this project aims to construct a classifier $C$ to predict the outcome $Y_i$ of game $i$, in which $Y_i$ is a binary class denoting the win or loss of the blue side in that particular game.
@@ -17,7 +17,7 @@
   |...|...|...|...|...|
   |EUW1_6881140491|6|...|1|...|1|
 
-  _Sample snapshot of dataset_
+  *Sample snapshot of dataset*
 
 - ### Data Cleaning and Preprocessing
   The dataset does not contain missing values. However, prior to analyzing the data, necessary feature transformation and outlier deletion were performed based on domain knowledge. In particular, the following tasks are performed:
