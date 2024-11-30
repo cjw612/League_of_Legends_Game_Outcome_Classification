@@ -38,10 +38,14 @@ $$
 
 - ### Data Analysis
   Four different models are deployed in this analysis to determine which model performs the best on this dataset:
-  - Logistic Regression with L1 penalty
-  - Linear Discriminant Analysis (LDA)
-  - Random Forest
-  - XGBoost with Bayesian hyperparameter optimization
+  - **Logistic Regression with L1 penalty** \
+    Due to this problem being a binary classification problem, Logistic Regression is deployed while incorporating an L1 penalty in the model to perform feature selection. The coefficient $C$ is also optimized by grid search with the package *GridSearchCV*.
+  - **Linear Discriminant Analysis (LDA)** \
+    Based on the results of the EDA, we can observe that the features in both classes roughly follow a Gaussian distribution. Therefore, Linear Discriminant Analysis is deployed, in addition to its low variance to prevent overfitting, as opposed to Quadratic Discriminant Analysis.
+  - **Random Forest with Bayesian hyperparameter optimization** \
+    Implemented Random Forest with hyperparameter Bayesian optimization with the package *hyperopt*.
+  - **XGBoost with Bayesian hyperparameter optimization** \
+    Implemented XGBoost with Bayesian hyperparameter optimization with the package *hyperopt*.
 
   In addition, K-fold Cross-Validation with $K = 5$ is also implemented for model selection to lower the variance of the results.
 
@@ -62,6 +66,6 @@ $$
 
 - ### References
 
-  [1] Redback93. "SRFull-1600p." Reddit 20, July 2025, https://www.reddit.com/r/leagueoflegends/comments/3dx2dn/extremely_high_resolution_summoners_rift_image/ \
+  [1] Redback93. "SRFull-1600p." Reddit, 20 July 2025, https://www.reddit.com/r/leagueoflegends/comments/3dx2dn/extremely_high_resolution_summoners_rift_image/ \
   [2] Karlo Rusovan and Daria Komic, League of Legends SoloQ matches at 15 minutes 2024 (Kaggle, 2024), https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data
 
