@@ -45,10 +45,10 @@ The results of the four models are summarized as follows:
 
 |Model|Accuracy|Precision|Recall|F1-Score|
 |-----|--------|---------|------|--------|
-|Logistic Regression|0.784158|0.783160|0.780529|0.781826|
-|LDA|0.784073|0.785103|0.776931|0.780966|
-|Random Forest|0.776581|0.782572|0.760548|0.771334|
-|XGBoost|0.779816|0.787437|0.761364|0.774055|
+|Logistic Regression|0.784200|0.783132|0.780701|0.781897|
+|LDA|0.784456	|0.785814|0.776755|0.781230|
+|Random Forest|0.777219|0.783135|0.761377|0.772021|
+|XGBoost|0.781987|0.792955|0.758099	|0.775049|
 
 ### Limitations
 - As some features are highly correlated, implementing a more sophisticated outlier detection algorithm coupled with current domain knowledge-based outlier detection may further improve the results.
