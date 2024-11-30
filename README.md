@@ -7,7 +7,7 @@ This project aims to predict which team would win a League of Legends game using
 The dataset used for this analysis is the "match_data_v5.csv" dataset, originally created by Karlo Rusovan and Daria Komic on [Kaggle](https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data).
 
 ### Data Structure
-This dataset contains 24,224 rows representing unique games and 29 columns, with the first column being the matchID and the last column being an indicator of which team had won that game. The remaining columns represent in-game statistics of both teams, including gold earned, minions slain, turrets destroyed, etc.
+This dataset contains 24,224 rows representing unique games and 29 columns, with the first column being the matchID and the last column being an indicator of which team had won that game. The remaining columns represent in-game statistics of both teams, including gold earned, wards placed, turrets destroyed, etc.
 
 |matchID|blueTeamControlWardsPlaced|...|redTeamControlWardsPlaced|...|blueWin|
 |-------|--------------------------|---|-------------------------|---|-------|
