@@ -55,3 +55,6 @@ The results of the four models are summarized in the following table:
 - In practice, gold difference at the 15-minute mark does not guarantee the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may not affect the outcome of the game. Therefore, incorporating the champion compositions of both teams may further increase prediction accuracy.
 - Incorporating player metadata (e.g., proficiency of champion, rank) may also increase prediction accuracy, as the current dataset assumes that all players are homogenous. 
 
+### References
+League of Legends SoloQ matches at 15 minutes 2024. (2024). Karlo Rusovan and Daria Komic. Kaggle.
+https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data
