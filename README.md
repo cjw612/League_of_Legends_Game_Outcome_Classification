@@ -38,7 +38,7 @@ Four different models are deployed in this analysis to determine which model per
 - Random Forest
 - XG Boosting with hyperparameter optimization
 
-In addition, we performed model selection with K-fold Cross-Validation with $K = 5$ to lower the variance of our results.
+In addition, K-fold Cross-Validation with $K = 5$ is also implemented for model selection to lower the variance of the results.
 
 ### Results
 The results of the four models are summarized as follows:
