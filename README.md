@@ -22,7 +22,7 @@ The dataset does not contain missing values. However, prior to analyzing the dat
 
 - Created features that represent the difference between a particular column between teams.
 - Transferred necessary features to qualitative variables
-- Removed outlier games indicated by winning even with a large gold deficit at 15 minutes/losing even with a large gold lead at 15 minutes, which constitutes to around 3% of the total data.
+- Removed outlier games indicated by winning even with a significant gold deficit at 15 minutes/losing even with a significant gold lead at 15 minutes, which constitutes around 3% of the total games.
 
 ### Exploratory Data Analysis
 EDA in this project is aimed to address the following questions:
