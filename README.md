@@ -1,13 +1,13 @@
 # League of Legends Game Outcome Prediction
 
 - ### Project Overview and Objective
-  This project aims to predict which team would win a League of Legends game using in-game data representing the game state at the 15-minute mark. In particular, given the vector of the in-game statistics $X_i$ of game $i$, this project aims to construct a classifier $C$ to predict the outcome $Y_i$ of game $i$, where $Y_i$ is a binary class denoting the win or loss of that particular game.
+  This project aims to predict which team would win a League of Legends game using in-game data representing the game state at the 15-minute mark. League of Legends is a MOBA game with two sides, a blue side and a red side, each consisting of five players. In particular, given the vector of the in-game statistics $X_i$ of game $i$, this project aims to construct a classifier $C$ to predict the outcome $Y_i$ of game $i$, where $Y_i$ is a binary class denoting the win or loss of the blue side in that particular game.
 
 - ### Data Source
   The dataset used for this analysis is the "match_data_v5.csv" dataset, originally created by Karlo Rusovan and Daria Komic on [Kaggle](https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data).
 
 - ### Data Structure
-  This dataset contains 24,224 rows representing unique games and 29 columns, with the first column being the matchID and the last column being an indicator of which team (blue or red) had won that game. The remaining columns represent in-game statistics of both teams, including gold earned, wards placed, turrets destroyed, etc.
+  This dataset contains 24,224 rows representing unique games and 29 columns, with the first column being the matchID and the last column being an indicator of which side had won that game. The remaining columns represent in-game statistics of both teams, including gold earned, wards placed, turrets destroyed, etc.
 
   |matchID|blueTeamControlWardsPlaced|...|redTeamControlWardsPlaced|...|blueWin|
   |-------|--------------------------|---|-------------------------|---|-------|
