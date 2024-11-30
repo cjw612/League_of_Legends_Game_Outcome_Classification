@@ -41,7 +41,7 @@ Four different models are deployed in this analysis to determine which model per
 In addition, K-fold Cross-Validation with $K = 5$ is also implemented for model selection to lower the variance of the results.
 
 ### Results
-The results of the four models are summarized as follows:
+The results of the four models are summarized in the following table:
 
 |Model|Accuracy|Precision|Recall|F1-Score|
 |-----|--------|---------|------|--------|
