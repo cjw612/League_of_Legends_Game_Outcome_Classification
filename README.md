@@ -1,4 +1,6 @@
 # League of Legends Game Outcome Prediction
+![Game Map of League of Legends](assets/SRFull-1600p (1).jpg)
+
 
 - ### Project Overview and Objective
   This project aims to predict which team would win a League of Legends game using in-game data representing the game state at the 15-minute mark. League of Legends is an online MOBA game with two sides, a blue side and a red side, with each side consisting of five players. In particular, given the vector of the in-game statistics $X_i$ of game $i$, this project aims to construct a classifier $C$ to predict the outcome $Y_i$ of game $i$, in which $Y_i$ is a binary class denoting the win or loss of the blue side in that particular game.
