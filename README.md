@@ -41,7 +41,7 @@ $$
 - ### Data Analysis
   Four different models are deployed in this analysis to determine which model performs the best on this dataset:
   - **Logistic Regression with L1 penalty** \
-    Due to this problem being a binary classification problem, Logistic Regression is deployed while incorporating an L1 penalty in the model to perform feature selection. The coefficient $C$ is also optimized by grid search with the package *GridSearchCV*.
+    Due to this problem being a binary classification problem, Logistic Regression is deployed while incorporating an L1 penalty in the model to perform feature selection, as it is expected that only a subset of features has a significant enough impact on the outcome of a game. The coefficient $C$ is also optimized by grid search with the package *GridSearchCV*.
   - **Linear Discriminant Analysis (LDA)** \
     Based on the results of the EDA, we can observe that the features in both classes roughly follow a Gaussian distribution. Therefore, Linear Discriminant Analysis is deployed, in addition to its low variance to prevent overfitting, as opposed to Quadratic Discriminant Analysis.
   - **Random Forest with Bayesian hyperparameter optimization** \
