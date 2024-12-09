@@ -42,15 +42,15 @@ $$
   - What is the difference in the distribution of quantitative features across the two target classes?
 
 - ### Data Analysis
-  Four different models are deployed in this analysis to determine which model performs the best on this dataset:
+  Four different models are deployed in this analysis to determine which model is optimal for this dataset:
   - #### Logistic Regression with L1 penalty
-    Due to this problem being a binary classification problem, Logistic Regression is deployed while incorporating an L1 penalty in the model to perform feature selection, as it is expected that only a subset of features has a significant enough impact on the outcome of a game. The coefficient $C$ is also optimized by grid search with the package *GridSearchCV*.
+    Due to this problem being a binary classification problem, Logistic Regression is deployed while incorporating an L1 penalty in the model to perform feature selection, as it is expected that only a subset of features has a significant enough impact on the outcome of a game. The regularization strength coefficient $C$ is optimized with grid search by the package *GridSearchCV*.
   - #### Linear Discriminant Analysis (LDA)
-    Based on the results of the EDA, we can observe that the features in both classes roughly follow a Gaussian distribution. Therefore, Linear Discriminant Analysis is deployed, in addition to its low variance to prevent overfitting, as opposed to Quadratic Discriminant Analysis.
+    Based on the results of the EDA, we can observe that the features in both classes roughly follow a Gaussian distribution. In addition to the low variance in this model that may alleviate overfitting, Linear Discriminant Analysis is deployed as opposed to Quadratic Discriminant Analysis.
   - #### Random Forest with Bayesian hyperparameter optimization
-    Implemented Random Forest with hyperparameter Bayesian optimization with the package *hyperopt*.
+    Random Forest is one of the state-of-the-art machine learning methods, relying on multiple decision trees while considering only a subset of features at each split to lower the variance of the model. As the size of this dataset does not create excessive computational overheads, Random Forest is implemented with hyperparameter Bayesian optimization with the package *hyperopt*. The package _hyperopt_ is selected due to its flexibility of various parameters, in addition to the multiple parameters that are required to be optimized. 
   - #### XGBoost with Bayesian hyperparameter optimization
-    Implemented XGBoost with Bayesian hyperparameter optimization with the package *hyperopt*.
+    XGBoost is also one of the most efficient machine learning methods, which "boosts" a tree according to the results of each iteration to alter the weight of misclassified datapoints. XGBoost was also implemented with Bayesian hyperparameter optimization by the package *hyperopt*.
 
   In addition, K-fold Cross-Validation with $K = 5$ is also implemented for model selection to lower the variance of the results.
 
