@@ -9,7 +9,7 @@
     - **Programming Languages:** Python
     - **Libraries & Frameworks:** Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, XGBoost, Statsmodels, Scikit-learn, Hyperopt
     - **Feature Engineering:** Standard Scaling (StandardScaler)
-    - **Machine Learning Models:** Logistic Regression, Linear Discriminant Analysis (LDA), Random Forest Classifier, XGBoost
+    - **Machine Learning Models:** Logistic Regression, Linear Discriminant Analysis, Random Forest Classifier, XGBoost
     - **Visualization:** Matplotlib, Seaborn
     - **Development & Tools:** Jupyter Notebook
 
