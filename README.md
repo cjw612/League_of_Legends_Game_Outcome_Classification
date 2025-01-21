@@ -23,7 +23,7 @@
   The dataset does not contain missing values. However, prior to analyzing the data, necessary feature transformation and outlier deletion were performed based on domain knowledge. In particular, the following tasks are performed:
 
   - #### Feature Transformation:
-    Created features that represent the difference between a particular feature between teams. Note that all such features are constructed by subtracting the corresponding value of the red team from the blue team. 
+    Created features that represent the difference between a particular feature between teams. In practice, the difference between features has a greater impact than the absolute value of the features themselves. Note that all such features are constructed by subtracting the corresponding value of the red team from the blue team. 
     For instance, the feature $goldDiff$ is created by $blueTeamTotalGold - redTeamTotalGold$.
   - #### Variable Transformation:
     Transformed necessary features into categorical variables. In particular, features $blueWin$, $blueTeamFirstBlood$, and $redTeamFirstBlood$ are transformed into binary categorical variables due to their binary nature.
