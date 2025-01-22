@@ -49,7 +49,7 @@ $$
   - What are the distributions of quantitative features?
   - What is the difference in the distribution of quantitative features across the two target classes?
 
-- ### Data Analysis
+- ### Models
   Four different models are deployed in this analysis to determine which model is optimal for this dataset:
   - #### Logistic Regression with L1 penalty
     Due to this problem being a binary classification problem, Logistic Regression is deployed while incorporating an L1 penalty in the model to perform feature selection, as it is expected that only a subset of features has a significant enough impact on the outcome of a game. The regularization strength coefficient $C$ is optimized with grid search by the package *GridSearchCV*.
