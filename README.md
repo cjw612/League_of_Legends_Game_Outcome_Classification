@@ -51,7 +51,7 @@ $$
     We can observe some trivial correlations, such as the strong positive correlation between $blueTeamTotalGold$ and $blueTeamTotalKills$. However, there also exist some other correlations that may seem counter-intuitive, such as the negative correlation between $blueWin$ and $blueTeamTurretPlatesDestroyed$. Since this project aims to classify the outcome of matches with existing data, these counter-intuitive correlations are beyond the scope of this project and require additional metadata such as player metadata and champion (characters picked in each match) metadata to further explain such correlations. 
   - **What are the distributions of quantitative features?** \
     To address this question, histograms of each feature are constructed to assess the distribution of the quantitative features.
-    ![Histogram_before_outlier](assets/pre.png)
+    ![Histogram_before_outlier](assets/pre.png | width 100)
     Note that this graph is plotted prior to outlier removal. We can observe that since the features are created based on the original features, there are no abnormally distributed features that require further transformation or cleaning.
   - **What is the difference in the distribution of quantitative features across the two classes?** \
     To address this question, two sets of histograms of each feature are constructed to assess the distribution of the quantitative features of the two respective classes.
@@ -59,7 +59,7 @@ $$
     *Histogram of quantitative features of class=red_win*
     ![Histogram_after_outlier_bw](assets/post_bw.png)
     *Histogram of quantitative features of class=blue_win* \
-    Note that both graphs are plotted after outlier removal. In addition, the "difference" features are mirrored in the two graphs, reflecting how the features are created.
+    Note that both graphs are plotted after outlier removal. In addition, the "difference" features are mirrored in the two classes, reflecting how the features are created.
 - ### Models
   Four different models are deployed in this analysis to determine which model is optimal for this dataset:
   - #### Logistic Regression with L1 penalty
