@@ -45,7 +45,9 @@ $$
 - ### Exploratory Data Analysis
   EDA in this project is aimed to address the following questions:
 
-  - What are the correlations between features?
+  - **What are the correlations between features?**
+    To address this question, a pairwise correlation plot is created with all the features.
+    ![Correplation plot](assets/cor.png)
   - What are the distributions of quantitative features?
   - What is the difference in the distribution of quantitative features across the two target classes?
 
