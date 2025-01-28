@@ -47,7 +47,7 @@ $$
 
   - **What are the correlations between features?**
     To address this question, a pairwise correlation plot is created with all the features.
-    ![Correplation plot](assets/cor.png)
+    ![Correlation plot](assets/cor.png)
   - What are the distributions of quantitative features?
   - What is the difference in the distribution of quantitative features across the two target classes?
 
