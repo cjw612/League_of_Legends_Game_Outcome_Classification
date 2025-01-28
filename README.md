@@ -48,7 +48,7 @@ $$
   - **What are the correlations between features?** \
     To address this question, a pairwise correlation matrix is constructed with all the features.
     ![Correlation plot](assets/cor.png)
-    We can observe that there are some trivial correlations, such as the strong positive correlation between $blueTeamTotalGold$ and $blueTeamTotalKills$. However, there also exists some untrivial correlations that may seem counter-intuitive, such as the negative correlation between $blueWin$ and $blueTeamTurretPlatesDestroyed$. Since this project aims to classify the outcome of matches with existing data, these counter-intuitive correlations are beyond the scope of this project and require additional metadata such as player metadata and champion (characters picked in each match) metadata to further explain such correlations. 
+    We can observe that there are some trivial correlations, such as the strong positive correlation between $blueTeamTotalGold$ and $blueTeamTotalKills$. However, there also exists some other correlations that may seem counter-intuitive, such as the negative correlation between $blueWin$ and $blueTeamTurretPlatesDestroyed$. Since this project aims to classify the outcome of matches with existing data, these counter-intuitive correlations are beyond the scope of this project and require additional metadata such as player metadata and champion (characters picked in each match) metadata to further explain such correlations. 
   - What are the distributions of quantitative features?
   - What is the difference in the distribution of quantitative features across the two target classes?
 
