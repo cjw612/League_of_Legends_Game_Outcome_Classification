@@ -58,7 +58,8 @@ $$
     ![Histogram_after_outlier_rw](assets/post_rw.png)
     *Histogram of quantitative features of class=red_win*
     ![Histogram_after_outlier_bw](assets/post_bw.png)
-    *Histogram of quantitative features of class=blue_win*
+    *Histogram of quantitative features of class=blue_win* \
+    Note that both graphs are plotted after outlier removal. In addition, the "difference" features are mirrored in the two graphs, reflecting how the features are created.
 - ### Models
   Four different models are deployed in this analysis to determine which model is optimal for this dataset:
   - #### Logistic Regression with L1 penalty
