@@ -48,10 +48,17 @@ $$
   - **What are the correlations between features?** \
     To address this question, a pairwise correlation matrix is constructed with all the features.
     ![Correlation plot](assets/cor.png)
-    We can observe that there are some trivial correlations, such as the strong positive correlation between $blueTeamTotalGold$ and $blueTeamTotalKills$. However, there also exists some other correlations that may seem counter-intuitive, such as the negative correlation between $blueWin$ and $blueTeamTurretPlatesDestroyed$. Since this project aims to classify the outcome of matches with existing data, these counter-intuitive correlations are beyond the scope of this project and require additional metadata such as player metadata and champion (characters picked in each match) metadata to further explain such correlations. 
-  - What are the distributions of quantitative features?
-  - What is the difference in the distribution of quantitative features across the two target classes?
-
+    We can observe some trivial correlations, such as the strong positive correlation between $blueTeamTotalGold$ and $blueTeamTotalKills$. However, there also exist some other correlations that may seem counter-intuitive, such as the negative correlation between $blueWin$ and $blueTeamTurretPlatesDestroyed$. Since this project aims to classify the outcome of matches with existing data, these counter-intuitive correlations are beyond the scope of this project and require additional metadata such as player metadata and champion (characters picked in each match) metadata to further explain such correlations. 
+  - **What are the distributions of quantitative features?** \
+    To address this question, histograms of each feature are constructed to assess the distribution of the quantitative features.
+    ![Histogram_before_outlier](assets/pre.png)
+    Note that this graph is plotted prior to outlier removal. We can observe that since the features are created based on the original features, there are no abnormally distributed features that require further transformation or cleaning.
+  - **What is the difference in the distribution of quantitative features across the two classes?** \
+    To address this question, two sets of histograms of each feature are constructed to assess the distribution of the quantitative features of the two respective classes.
+    ![Histogram_after_outlier_rw](assets/post_rw.png)
+    *Histogram of quantitative features of class=red_win*
+    ![Histogram_after_outlier_bw](assets/post_bw.png)
+    *Histogram of quantitative features of class=blue_win*
 - ### Models
   Four different models are deployed in this analysis to determine which model is optimal for this dataset:
   - #### Logistic Regression with L1 penalty
@@ -77,7 +84,8 @@ $$
 
 - ### Limitations
   - As current outlier detection is based on domain knowledge, incorporating a more sophisticated outlier detection algorithm may further improve the current classification results.
-  - In practice, the impact of the gold difference at the 15-minute mark is not always deterministic of the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may have little to even no impact on the outcome of the game. In addition, there also exist other counter-intuitive correlations, such as the negative relationship between winning and turret plates destroyed, which may also reflect the differences in team composition. Therefore, incorporating champion composition metadata of both teams may further increase prediction accuracy.
+  - In practice, the impact of the gold difference at the 15-minute mark is not always deterministic of the outcome of the game. For example, for team compositions that are more late game-focused, a gold deficit at the 15-minute mark may have little to even no impact on the outcome of the game. Therefore, incorporating champion composition metadata of both teams may further increase prediction accuracy.
+  - In response to the counter-intuitive correlations observed from the correlation plot, such as the negative relationship between winning and turret plates destroyed, further analysis of the metadata could shed light on the reason behind the presence of such correlations in this dataset. 
   - Incorporating player metadata (e.g., proficiency in champion, skill level) may also increase prediction accuracy, as the current dataset follows the assumption that all players are homogenous. 
 
 - ### References
