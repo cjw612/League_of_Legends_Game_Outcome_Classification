@@ -17,7 +17,7 @@
   The dataset used for this analysis is the **"League of Legends SoloQ matches at 15 minutes 2024" (match_data_v5.csv)** dataset, created by Karlo Rusovan and Daria Komic on [Kaggle](https://www.kaggle.com/datasets/karlorusovan/league-of-legends-soloq-matches-at-10-minutes-2024/data).
 
 - ### Data Structure
-  This dataset contains 24,224 rows, with each row representing one unique game, and 29 columns, with the first column being the matchID and the last column being the indicator of whether the blue side had won that game. The remaining columns represent in-game statistics of both teams, including gold earned, wards placed, turrets destroyed, etc.
+  This dataset contains 24,224 rows, with each row representing one unique game, and 29 columns, with the first column being the matchID and the last column being the indicator of whether the blue side had won that game. The remaining columns represent in-game statistics of both teams, including gold earned, wards placed, turrets destroyed, etc. A snapshot of the dataset is depicted in the following table. 
 
   |matchID|blueTeamControlWardsPlaced|...|redTeamControlWardsPlaced|...|blueWin|
   |-------|--------------------------|---|-------------------------|---|-------|
