@@ -1,6 +1,6 @@
 # League of Legends Game Outcome Prediction
 ![Game Map of League of Legends](assets/SR.jpg)
-*Summoner's Rift, the primary map in League of Legends*
+*Summoner's Rift, the primary game map in League of Legends*
 
 - ### Project Summary
   - #### Project Overview
